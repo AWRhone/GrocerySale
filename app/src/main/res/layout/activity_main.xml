@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#225FF4B8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="257dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Grocery Sale"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="445dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="257dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:background="#85FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="257dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="#85FFFFFF"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="128.5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:text="Log In"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="128.5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
